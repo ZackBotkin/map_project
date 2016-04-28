@@ -2,7 +2,7 @@
 import tornado.web
 import tornado.ioloop
 
-from src.handlers import StateHandler
+from src.handlers import ApprovalHandler
 
 def main():
 
@@ -10,7 +10,7 @@ def main():
     settings['static_path'] = './public/'
 
     app = tornado.web.Application([
-        (r"/state", StateHandler, {}),
+        (r"/approval", ApprovalHandler, {}),
         (r"/()$", tornado.web.StaticFileHandler, dict(path=settings['static_path'] + 'index.html'))
     ], **settings)
 
