@@ -26,11 +26,11 @@ def main():
 
     args = _get_args()
     weighted_data = get_weighted_data(args.filename)
-    print "Poll\t%s\nBucket\t%s\nWeight\t%s\n" % (
+    print ("Poll\t%s\nBucket\t%s\nWeight\t%s\n" % (
         args.poll_name,
         weighted_data[args.poll_name]['bucket_number'],
         weighted_data[args.poll_name]['poll_weight']
-    )
+    ))
 
 
 if __name__ == "__main__":
