@@ -37,7 +37,6 @@ def get_args():
 
 def get_state_from_chart(chart, title):
 
-    states = {}
     titles = []
 
     for state in chart:
