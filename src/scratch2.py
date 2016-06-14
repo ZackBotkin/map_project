@@ -10,12 +10,12 @@ def get_args():
 
     parser.add_argument(
         '--topic',
-        default     = 'obama-job-approval',
-        dest        = 'topic'
+        dest        = 'topic',
+        default     = 'obama-job-approval'
     )
 
     parser.add_argument(
-        '--index',
+        '--state-index',
         dest    = 'index',
         default = 0
     )
